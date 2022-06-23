@@ -1,8 +1,9 @@
-package com.uce.edu.demo.service;
+package com.uce.edu.demo.repository;
 
 import com.uce.edu.demo.modelo.Propietario;
 
-public interface IPropietarioService {
+public interface IPropietarioRepository {
+	public Propietario consultar(String cedula);
 
 	public void crear(Propietario propietario);
 
